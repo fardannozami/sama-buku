@@ -1,0 +1,13 @@
+export type Book = {
+ id: string; title: string; author: string; category: string; description: string;
+ synopsis: string; isbn: string; year: string; pages: string; price: string;
+ cover: string; status: 'Published' | 'Draft'; featured: boolean;
+};
+export const initialBooks: Book[] = [
+ {id:'1',title:'Ruang untuk Bertumbuh',author:'Nara Pradipta',category:'Pengembangan Diri',description:'Belajar menerima proses dan memberi ruang bagi diri sendiri.',synopsis:'Sebuah catatan hangat tentang perjalanan mengenal diri, berdamai dengan perubahan, dan tumbuh tanpa harus terburu-buru.',isbn:'978-623-000-001-1',year:'2026',pages:'184',price:'89000',cover:'',status:'Published',featured:true},
+ {id:'2',title:'Kota yang Menyimpan Hujan',author:'Adelia Senja',category:'Fiksi',description:'Cerita tentang rumah, kehilangan, dan hal-hal yang kembali.',synopsis:'Di sebuah kota kecil yang selalu basah setelah senja, seorang perempuan menemukan kembali cerita yang lama ia tinggalkan.',isbn:'978-623-000-002-8',year:'2026',pages:'236',price:'98000',cover:'',status:'Published',featured:true},
+ {id:'3',title:'Membaca Dunia',author:'Raka Mahendra',category:'Pendidikan',description:'Membuka jendela pengetahuan melalui kebiasaan membaca.',synopsis:'Buku pengantar untuk membangun kebiasaan membaca yang menyenangkan dan memahami dunia dari sudut pandang yang lebih luas.',isbn:'978-623-000-003-5',year:'2025',pages:'152',price:'75000',cover:'',status:'Published',featured:true},
+ {id:'4',title:'Catatan Kecil tentang Pulang',author:'Mira Larasati',category:'Sastra',description:'Fragmen puisi dan prosa tentang tempat untuk kembali.',synopsis:'Kumpulan prosa pendek dan puisi yang merayakan kenangan, keluarga, dan perjalanan pulang dalam arti yang paling personal.',isbn:'978-623-000-004-2',year:'2025',pages:'128',price:'68000',cover:'',status:'Published',featured:false},
+ {id:'5',title:'Kerja dengan Makna',author:'Bima Wiratama',category:'Nonfiksi',description:'Menata ulang hubungan kita dengan pekerjaan dan hidup.',synopsis:'Refleksi praktis tentang nilai, fokus, dan membangun kehidupan profesional yang selaras dengan hal-hal yang kita anggap penting.',isbn:'978-623-000-005-9',year:'2026',pages:'202',price:'92000',cover:'',status:'Published',featured:false},
+ {id:'6',title:'Atlas Imajinasi',author:'Tim Sama Buku',category:'Anak',description:'Draf buku ilustrasi untuk mengajak anak bertanya dan membayangkan.',synopsis:'Contoh naskah yang masih dalam proses penyuntingan.',isbn:'',year:'2026',pages:'',price:'',cover:'',status:'Draft',featured:false}
+];
